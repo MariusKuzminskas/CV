@@ -45,9 +45,19 @@ a:hover {
     
 }
 
-
 hr {
   margin-bottom: 30px;
+}
+
+.smallHr {
+    width: 75%;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    background-color: gray;
+    border-radius: 2px;
 }
 
 }
@@ -145,7 +155,7 @@ p + h3 {
     display: inline-block;
     width: 30%;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 15px;
 /*    margin-left: 10px;*/
 /*    border: 1px solid black;*/
 }
@@ -157,6 +167,10 @@ progress[value] {
     width: 50%;
     height: 20px;
 /*    text-align: right;*/
+}
+
+.skills .contentWrap p:last-child {
+    margin-top: 25px;
 }
 
 
