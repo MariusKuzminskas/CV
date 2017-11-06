@@ -1,0 +1,232 @@
+/* Global styles
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  margin-top: 0;
+}
+h1 {
+  font-size: 80px;
+
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  margin: 0;
+}
+a {
+  color: #EF233C;
+}
+a:hover {
+  text-decoration: none;
+}
+.contentWrap {
+  max-width: 950px;
+  margin: auto;
+  padding: 40px;
+  overflow: hidden; /*sitas cia gerai padare kad nesektu*/
+}
+
+.headline {
+  text-align: center;
+  margin-bottom: 0;
+    
+}
+
+hr {
+  margin-bottom: 30px;
+}
+
+.smallHr {
+    width: 75%;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    background-color: gray;
+    border-radius: 2px;
+}
+
+}
+p.upcase {
+  text-transform: uppercase;
+}
+
+
+/* Header & Footer
+------------------------------------*/
+header {
+
+  padding-top: 40px;
+}
+header, footer {
+  background: #2B2D42;
+  color: #8D99AE;
+
+}
+
+/*header*/
+header h1, header h2 {
+  color: #EDF2F4;
+  margin: 0;
+}
+.profileImg {
+  border-radius: 40%;
+  width: 300px;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+
+}
+
+.socialLinks a {
+  /*background: white;*/
+  padding: 20px;
+  display: inline-block;
+}
+
+/* Nnavigation
+------------------------------------*/
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Work Experience
+------------------------------------*/
+.work {
+  background: #EDF2F4;
+  /*background: #fff5dd;*/
+}
+h3 ~ p {
+  margin: 0;
+}
+
+/* Education
+------------------------------------*/
+#education {
+  /*background: #8D99AE;*/
+  background: linear-gradient(rgba(141, 153, 174, 0.9), rgba(141, 153, 174, 0.1)) fixed;
+  background-image: url(../img/education.jpg);
+  background-size: cover;
+}
+
+
+p + h3 {
+  margin-top: 30px;
+
+}
+
+/* Skills
+------------------------------------*/
+.skills {
+/*  background: #EDF2F4;*/
+  background: #fff5dd;
+    
+}
+
+/*    Skills layout in 1 colum for small displays*/
+.skills h3 {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    margin-top: 15px;
+/*    margin-left: 10px;*/
+/*    border: 1px solid black;*/
+}
+
+progress[value] {
+/*  margin-left: 20%;*/
+/*    margin-right: 10%; */
+    display: inline-block;
+    width: 50%;
+    height: 20px;
+/*    text-align: right;*/
+}
+
+.skills .contentWrap p:last-child {
+    margin-top: 25px;
+}
+
+
+/* Animation clases
+------------------------------------*/
+.hoverOver {
+    text-shadow: 5px 5px 3px;
+    
+}
+
+
+
+/* Media query
+------------------------------------*/
+@media (min-width: 768px) {
+  .colNarrow {
+    width: 30%;
+    float: left;
+    min-height: 140px;
+    /*background: yellow;*/
+  }
+  .colWide {
+    width: 70%;
+    padding-left: 20px;
+    float: left;
+    min-height: 140px;
+    /*background: yellow;*/
+
+  }
+/*    Skills in 2 colums for bigger displays*/
+    .skills h3 {
+    display: inline-block;
+    width: 19%;
+    text-align: left;
+    margin-top: 15px;
+/*    margin-left: 10px;*/
+/*    border: 1px solid black;*/
+}
+
+progress[value] {
+/*  margin-left: 20%;*/
+    margin-right: 10%; 
+    display: inline-block;
+    width: 20%;
+    height: 20px;
+/*    text-align: right;*/
+}
+
+    
+}
+@media (max-width: 767px) {
+  header {
+    text-align: center;
+    /*background: blue;*/
+  }
+  .profileImg {
+    width: 200px;
+  }
+}
