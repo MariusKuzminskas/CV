@@ -45,6 +45,7 @@ a:hover {
     
 }
 
+
 hr {
   margin-bottom: 30px;
 }
@@ -159,6 +160,14 @@ progress[value] {
 }
 
 
+/* Animation clases
+------------------------------------*/
+.hoverOver {
+    text-shadow: 5px 5px 3px;
+    
+}
+
+
 
 /* Media query
 ------------------------------------*/
@@ -182,7 +191,7 @@ progress[value] {
     display: inline-block;
     width: 19%;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 15px;
 /*    margin-left: 10px;*/
 /*    border: 1px solid black;*/
 }

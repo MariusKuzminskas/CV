@@ -9,14 +9,22 @@
     <script src="javascript/jquery-3.2.1.min.js"></script>
     <script>
       $("document").ready(function() {
+//          Onload fading page efects
           $("#about").hide(1);
           $("#jobDescrip").hide(1);
           $("#skills").hide(1);
           $("#contact").hide(10);
           $("#about").fadeIn(1000);
-          $("#jobDescrip").slideDown(2000);
+          $("#jobDescrip").slideDown(700);
           $("#skills").fadeIn(1000);
           $("#contact").fadeIn(1000);
+          
+//          Hower efects
+          $(".headline").hover(function() {
+            $( this ).toggleClass("hoverOver");
+//            $( this ).animate({fontSize:"+=20px"} "fast" "swing");
+              
+          })
       })
     </script>
 </head>
@@ -37,7 +45,7 @@
         <img class="profileImg colNarrow" src="img/mariusLogo.jpeg" alt="Marius Kuzminskas">
         <div class="colWide">
           <h1>Marius Kuzminskas</h1>
-          <h2>Kuriuosi programuotojo profesiją</h2>
+          <h2>Kuriuosi programuotojo profesiją HOVER efecta</h2>
           <p>Nusprendžiau savo karjeroje padaryti posūkį link ten kur labiau traukia ir kur patinka. Nuo pat vaikystės žavėjo kompiuteriai ir viska kas susiję su technologijomis. Universitete labai užsifiksavo programavimo pagrindai. Puikiai sekėsi ir labai patiko. Pagaliau apsisprendžiau eiti link ten kur traukia. Pradėjau mokintis programavimo kalbų savarankiškai ir ketinu įsitvirtinti kaip web ar software programuotojas.</p>
         </div>
       </div>
@@ -157,7 +165,6 @@
               <h3>Rusų kalba</h3>
               <progress value="25" max="100">25 %</progress>
             <!--end of skill-->
-               <hr>
             <!--Start of Skil-->
              <h3>HTML/HTML5</h3>
              <progress value="40" max="100">40 %</progress>
@@ -185,9 +192,9 @@
 
         <!-- Social media and contact links. Add or remove any networks. -->
         <div class="socialLinks">
-            <a href="mailto:email@example.com">email@example.com</a>
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="#" target="_blank">Facebook</a>
+            <a href="mailto:kuzminskas.marius7@gmail.com">Parašyti elektroninį laišką</a>
+            <a href="www.linkedin.com/in/marius-kuzminskas" target="_blank">LinkedIn</a>
+<!--            <a href="#" target="_blank">Facebook</a>-->
         </div>
 
         <p>Copyright 2017 by Marius Kuzminskas</p>
