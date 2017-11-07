@@ -132,7 +132,7 @@ h3 ~ p {
 #education {
   /*background: #8D99AE;*/
   background: linear-gradient(rgba(141, 153, 174, 0.9), rgba(141, 153, 174, 0.1)) fixed;
-  background-image: url(../img/education.jpg);
+  background-image: url(img/education.jpg);
   background-size: cover;
 }
 
