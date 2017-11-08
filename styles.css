@@ -60,14 +60,19 @@ hr {
     border-radius: 2px;
 }
 
-}
+
 p.upcase {
   text-transform: uppercase;
+    
 }
 
 
 /* Header & Footer
 ------------------------------------*/
+.pdf {
+    margin: 0;
+}
+
 header {
 
   padding-top: 40px;
