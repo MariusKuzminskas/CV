@@ -98,6 +98,12 @@ footer {
     padding-top: 20px;
 }
 
+.red {
+    color: #EF233C;
+    font-weight: 300;
+    display: inline-block;
+}
+
 .socialLinks a {
   /*background: white;*/
   padding: 20px;

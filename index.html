@@ -19,13 +19,18 @@
                     scrollTop: $(section).offset().top
                  });
              });
-
           
           // efects on image and headlines by adding a class
           $("nav a").addClass("hvr-underline-from-center");
-          $(".headline").addClass("hvr-bounce-in");      
+          $(".headline").addClass("hvr-bounce-in");
+          
+          $("#phone").click(function() {
+              $(this).fadeOut("fast")
+              $("div.socialLinks a:last").after("<h3 class='red'>Mob. tel: 8-6900-4591</h3>");
+          });
+          
               
-     })
+     });
       
     </script>
 </head>
@@ -201,7 +206,7 @@
         <div class="socialLinks">
             <a href="mailto:kuzminskas.marius7@gmail.com">Parašyti elektroninį laišką</a>
             <a href="http://www.linkedin.com/in/marius-kuzminskas" target="_blank">LinkedIn</a>
-            
+            <button id="phone">Rodyti telefono numerį</button>
             
         </div>
 
