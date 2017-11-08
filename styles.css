@@ -90,8 +90,12 @@ header h1, header h2 {
 
 /*footer*/
 footer {
-  text-align: center;
+/*    margin-top: 15px;*/
+    text-align: center;
+}
 
+#contact .contentWrap {
+    padding-top: 20px;
 }
 
 .socialLinks a {

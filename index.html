@@ -10,30 +10,22 @@
     <script>
       $("document").ready(function() {
 //          Onload fading page efects
-//         
-          
-//          Hower efects
-//          $(".headline").hover(function() {
-//            $( this ).toggleClass("hoverOver");
+   
+          //        Smooth scroll
+             $("#about").find("a").click(function(e) {
+                e.preventDefault();
+                var section = $(this).attr("href");
+                $("html, body").animate({
+                    scrollTop: $(section).offset().top
+                 });
+             });
 
           
-//              Smooth scroll
-             $("nav").find("a").click(function(e) {
-                    e.preventDefault();
-                    var section = $(this).attr("href");
-                    $("html, body").animate({
-                        scrollTop: $(section).offset().top
-                    });
-                });
-          
+          // efects on image and headlines by adding a class
           $("nav a").addClass("hvr-underline-from-center");
-//          $("nav a").addClass("hvr-float-shadow");
           $(".headline").addClass("hvr-bounce-in");      
               
-              
-              
-              
-          })
+     })
       
     </script>
 </head>
@@ -203,12 +195,13 @@
     <!-- // Footer & contact info -->
     <footer id="contact">
       <div class="contentWrap">
-        <h2>Susisiekite</h2>
+        <h2 class="headline">Susisiekite</h2>
 
         <!-- Social media and contact links. Add or remove any networks. -->
         <div class="socialLinks">
             <a href="mailto:kuzminskas.marius7@gmail.com">Parašyti elektroninį laišką</a>
             <a href="http://www.linkedin.com/in/marius-kuzminskas" target="_blank">LinkedIn</a>
+            
             
         </div>
 
