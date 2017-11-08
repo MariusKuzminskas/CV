@@ -10,22 +10,28 @@
     <script>
       $("document").ready(function() {
 //          Onload fading page efects
-          $("#about").hide(1);
-          $("#jobDescrip").hide(1);
-          $("#skills").hide(1);
-          $("#contact").hide(10);
-          $("#about").fadeIn(1000);
-          $("#jobDescrip").slideDown(700);
-          $("#skills").fadeIn(1000);
-          $("#contact").fadeIn(1000);
+//         
           
 //          Hower efects
-          $(".headline").hover(function() {
-            $( this ).toggleClass("hoverOver");
-//            $( this ).animate({fontSize:"+=20px"} "fast" "swing");
+//          $(".headline").hover(function() {
+//            $( this ).toggleClass("hoverOver");
+
+          
+//              Smooth scroll
+             $("nav").find("a").click(function(e) {
+                    e.preventDefault();
+                    var section = $(this).attr("href");
+                    $("html, body").animate({
+                        scrollTop: $(section).offset().top
+                    });
+                });
+              
+              
+              
+              
               
           })
-      })
+      
     </script>
 </head>
 <body>
