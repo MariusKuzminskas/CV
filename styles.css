@@ -74,8 +74,11 @@ p.upcase {
     margin: 0;
 }
 
+#about div p {
+   text-align: justify; 
+}
+
 header {
-  text-align: justify;
   padding-top: 40px;
 }
 header, footer {
@@ -144,15 +147,22 @@ h3 ~ p {
   margin: 0;
 }
 
+.work div div p {
+    margin-bottom: 0;
+}
+
 /* Education
 ------------------------------------*/
 #education {
-  /*background: #8D99AE;*/
+  /* paveikslelis fone*/
   background: linear-gradient(rgba(141, 153, 174, 0.9), rgba(141, 153, 174, 0.1)) fixed;
   background-image: url(img/education.jpg);
   background-size: cover;
 }
 
+.education div div p {
+    margin-bottom: 0;
+}
 
 p + h3 {
   margin-top: 30px;
@@ -281,6 +291,24 @@ progress[value] {
     width: 20%;
     height: 20px;
 /*    text-align: right;*/
+}
+    
+    /* Navigation
+------------------------------------*/
+nav {
+  z-index: 5;
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
     
