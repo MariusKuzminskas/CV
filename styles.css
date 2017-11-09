@@ -42,6 +42,7 @@ a:hover {
 .headline {
   text-align: center;
   margin-bottom: 0;
+  display: block;
     
 }
 
@@ -182,12 +183,14 @@ progress[value] {
     display: inline-block;
     width: 50%;
     height: 20px;
-/*    text-align: right;*/
+    vertical-align: bottom;
 }
 
 .skills .contentWrap p:last-child {
     margin-top: 25px;
 }
+
+
 
 
 /* Animation clases
