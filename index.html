@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marius Kuzminskas | Resume</title>
     <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
+    <link href="hover-min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="jquery-3.2.1.min.js"></script>
     <script>
@@ -23,7 +24,10 @@
           // efects on image and headlines by adding a class
           $("nav a").addClass("hvr-underline-from-center");
           $(".headline").addClass("hvr-bounce-in");
+          $("#jobDescrip .colWide").addClass("hvr-grow");  //dadetas
+          $("#education .colWide").addClass("hvr-grow");  //dadetas
           
+          // Adding functionality to home button and insertin phone nomber
           $("#phone").click(function() {
               $(this).fadeOut("fast")
               $("div.socialLinks a:last").after("<h3 class='red'>Mob. tel: 8-6900-4591</h3>");
@@ -48,10 +52,10 @@
 
 
       <div class="contentWrap">
-        <img class="profileImg colNarrow hvr-bounce-in" src="img/mariusLogo.jpeg" alt="Marius Kuzminskas">
+        <img class="profileImg colNarrow hvr-rotate" src="img/mariusLogo.jpeg" alt="Marius Kuzminskas">
         <div class="colWide">
           <h1>Marius Kuzminskas</h1>
-          <h2>Kuriuosi programuotojo profesiją</h2>
+          <h2>Besimokančio programuotojo vietos Kaune</h2>
           <p>Nuo pat vaikystės žavėjo kompiuteriai ir viskas, kas susiję su technologijomis. Universitete labiausiai užsifiksavo programavimo pagrindai - puikiai sekėsi ir labai patiko. Nusprendžiau siekti to, kad dirbti būtų malonu. Pradėjau mokytis programavimo kalbų <a href="#skills">savarankiškai</a> ir ketinu įsitvirtinti kaip web ar software programavimo specialistas. Neturiu daug patirties, bet turiu daug noro išmokti ir tapti puikiu specialistu. Jei suteiksite man galimybę, pranoksiu lūkesčius.  </p>
         </div>
       </div>
