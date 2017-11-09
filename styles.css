@@ -131,10 +131,11 @@ nav {
 }
 nav a {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 5px 20px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
+  border: 1px solid #EF233C;
 }
 
 /* Work Experience
@@ -293,23 +294,6 @@ progress[value] {
 /*    text-align: right;*/
 }
     
-    /* Navigation
-------------------------------------*/
-nav {
-  z-index: 5;
-  text-align: center;
-  background: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-nav a {
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-}
 
     
 }
