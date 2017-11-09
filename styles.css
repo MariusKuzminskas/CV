@@ -75,7 +75,7 @@ p.upcase {
 }
 
 header {
-
+  text-align: justify;
   padding-top: 40px;
 }
 header, footer {
