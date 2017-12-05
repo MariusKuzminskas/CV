@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marius Kuzminskas | Resume</title>
     <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
+<!--    Bootstrap-->
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link href="hover-min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="jquery-3.2.1.min.js"></script>
     <script>
       $("document").ready(function() {
-//          Onload fading page efects
+//          Onload efects
    
-          //        Smooth scroll
+          //        Smooth scroll to id
              $("#about").find("a").click(function(e) {
                 e.preventDefault();
                 var section = $(this).attr("href");
@@ -22,7 +25,7 @@
              });
           
           // efects on image and headlines by adding a class
-          $("nav a").addClass("hvr-underline-from-center");
+          $("nav a").addClass("hvr-underline-from-center rounded");
           $(".headline").addClass("hvr-bounce-in");
           $("#jobDescrip .colWide").addClass("hvr-grow");  //dadetas
           $("#education .colWide").addClass("hvr-grow");  //dadetas
@@ -43,13 +46,20 @@
 <body>
     <!-- // Intro -->
     <header id="about">
-      <nav>
-        <a href="#about">Apie mane</a>
-        <a href="#jobDescrip">Darbo patirtis</a>
-        <a href="#education">Išsilavinimas</a>
-        <a href="#skills">Įgūdžiai</a>
-        <a href="#contact">Susisiekite</a>
-<!--        <a href="#"></a>-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+                <a class="nav-item nav-link" href="#about">Apie mane</a>
+                <a class="nav-item nav-link" href="#jobDescrip">Darbo patirtis</a>
+                <a class="nav-item nav-link" href="#education">Išsilavinimas</a>
+                <a class="nav-item nav-link" href="#skills">Įgūdžiai</a>
+                <a class="nav-item nav-link" href="#contact">Susisiekite</a>
+            </div>
+        </div>
       </nav>
 
 
@@ -225,5 +235,11 @@
         <a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=mariuskuzminskas.5gbfree.com/&digit=style/plain/31/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;"></a>
       </div>
     </footer>
+    
+<!--    Bootsrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    
 </body>
 </html>

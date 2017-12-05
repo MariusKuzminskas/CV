@@ -11,6 +11,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
+
+
 h1, h2 {
   font-family: 'Caveat', cursive;
   font-weight: 400;
@@ -79,7 +81,7 @@ p.upcase {
 }
 
 header {
-  padding-top: 40px;
+/*  padding-top: 40px;*/
 }
 header, footer {
   background: #2B2D42;
@@ -179,13 +181,12 @@ p + h3 {
 }
 
 /*    Skills layout in 1 colum for small displays*/
-.skills h3 {
+.skills h4 {
     display: inline-block;
     width: 30%;
     text-align: left;
     margin-top: 15px;
-/*    margin-left: 10px;*/
-/*    border: 1px solid black;*/
+    font-size: 1 rem;
 }
 
 progress[value] {
