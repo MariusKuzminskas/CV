@@ -81,7 +81,7 @@ p.upcase {
 }
 
 header {
-/*  padding-top: 40px;*/
+  padding-top: 0;
 }
 header, footer {
   background: #2B2D42;
